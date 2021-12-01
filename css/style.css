@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+*{
+    font-family: 'Roboto';
+    margin: 0;
+}
+:root{
+    --primary: #ac51a0;
+}
+
+.wrapper {width:80%;
+    margin: 0 auto;
+}
+.header {display: flex;
+    justify-content: space-between;
+}
+.header__logo {width:100px;
+    height:100px;
+}
+.header__menu ul{display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__menu li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: black;
+}
+.main__section {
+    height: 50vh;
+    background-size: cover;
+}
+.slogan-search {display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slogan {display: block;
+    width: 60%;
+    align-items: center;
+}
+h1{
+    text-transform: uppercase;
+    text-shadow: 2px 3px 5px;
+    color: var(--primary);
+    font-size: 50px;
+    text-shadow: 10px 0 10px white;  
+}
+p{
+    line-height: 30px;
+    text-shadow: 10px 0 10px var(--primary);
+    font-size: large;
+}
+.search {height: fit-content;
+    padding: 15px;
+    margin-left: 15px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 4px 6px 6px white;
+}
+.search__field {display: flex;
+    padding-bottom: 5px;
+    align-items: center;
+}
+.search__field label{
+    display: block;
+    min-width: 200px;
+    width: 50%;
+}
+.search__field select .search__field input{
+    width: 50%;
+}
+select, input{
+    height: 30px;
+    box-sizing: border-box;
+} 
+.search__button {display: flex;
+    justify-content: flex-end;
+}
+.button {display: block;
+    background: var(--primary);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    height: 15px;
+    width: fit-content;
+    flex-shrink: 0;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.search:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+h2{width:50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+.feedback {display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feedback__item {
+    width:45%;
+    gap: 20px 20px;
+    box-shadow: 2px 6px 6px;
+    padding:20px;
+}
+.feedback__item-name {font-weight: bold;
+}
+/* .feedback__item-text {white-space: pre-wrap;
+} */
+.booking {
+}
+.booking li{
+    width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #ac51a079;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+.booking__item {display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.booking li:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.promotions {display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.promotions__item {width: 25%;
+    gap: 20px;
+    box-shadow: 2px 6px 6px;
+    padding: 10px;
+}
+.promotions__item-title {font-weight: bold;
+    font-size: 16px;
+}
+.promotions__item-button{display: flex;
+    justify-content: flex-end;
+
+}
+.promotions__item-image {
+}
+.promotions__item-text {
+}
+.subscribe {display: flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 7px white;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.subscribe__item {width: fit-content;
+    padding: 20px;
+    box-shadow: 0 0 7px white;
+    border-radius: 20px;
+}
+.subscribe__item:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.footer {display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__navigation {display: flex;
+} 
+.footer__navigation li{
+    list-style: none;
+}
+
+/* Страница результатов поиска локаций */
+
+.search__result {height:20vh;
+    margin: 10px;
+    box-shadow: 0 7px 7px var(--primary);
+}
+.search__result:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.search__result-region {height: 30px;
+    background: var(--primary);
+}
+
+.search__result-location {
+}
+.search__result-date {
+}
+.search__result-number {
+}
+.search__result-button {width: fit-content;
+    box-sizing: border-box;
+}
+.button {
+}
+/* Результаты поиска локаций */
+
+
+.location {display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: space-around;
+}
+.location-img {width: 100%;
+
+}
+.location__zone {
+    white-space: pre-wrap;
+    box-shadow: 0 7px 7px var(--primary);
+}
+.location__zone-name {height: 30px;
+    background-color: var(--primary);
+    text-align: center;
+    padding: 10px;
+}
+.location__zone-button {
+    display: flex;
+    justify-content: flex-end;
+}
